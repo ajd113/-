@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>大熊猫科普馆</title>
+		<style>
+			<!--
+			.container{
+			/*大框*/
+				margin:0 auto;/*居中*/
+			}
+			.headerBackground{
+			/*页眉盒子*/
+				background: url(img/hbg.jpg);/*背景*/
+				width: 1200px;/*宽度*/
+				height: 100px;/*高度*/
+				margin:0 auto;/*居中*/
+				line-height: 0.5;/*行间距*/
+			}
+			.navigation{
+			/*导航盒子*/
+				margin: 0 auto;/*居中*/
+				width: 1200px;/*宽度*/
+			}
+			.navigation a{
+			/*导航链接*/
+				color: #000000;/*字体颜色*/
+				text-decoration: none;/*下划线*/
+			}
+			.navigation th:hover{
+			/*鼠标划过单元格样式*/
+				background: rgba(114,234,77,0.70);/*背景色*/
+			}
+			.search{
+			/*搜索框*/
+				float: right;/*悬浮*/
+				margin-top: -60px;/*上边距*/
+				margin-right: 60px;/*右边距*/
+			}
+			.picture{
+			/*图片大框*/
+				width: 3600px;/*宽度*/
+				height:450px;/*高度*/
+				margin:0 auto;/*居中*/
+			}
+			.picture img{
+			/*图片格式*/
+				width: 900px;/*宽度*/
+				height: 450px;/*高度*/
+				float: left;/*悬浮*/
+				animation: 8s lunbo infinite;/*动画*/
+			}
+			.photo{
+			/*图片小框*/
+				width: 900px;/*宽度*/
+				height:450px;/*高度*/
+				margin:0 auto;/*居中*/
+				overflow: hidden;/*溢出隐藏*/
+			}
+			@keyframes lunbo{
+			/*轮播*/
+				0%{}
+				25%{transform: translateX(0px)}/*沿着X轴移动*/
+				35%{transform: translateX(-900px)}/*第二张*/
+				50%{transform: translateX(-900px)}/*第二张*/
+				60%{transform: translateX(-1800px)}/*第三张*/
+				75%{transform: translateX(-1800px)}/*第三张*/
+				85%{transform: translateX(-2700px)}/*第四张*/
+				100%{transform: translateX(-2700px)}/*第四张*/
+			}
+			.text{
+			/*目录文本框*/
+				width: 1000px;/*宽度*/
+				height: 200px;/*高度*/
+				margin:0 auto;/*居中*/
+			}
+			.text div{
+			/*文本中小框*/
+				width: 150px;/*宽度*/
+				height: 200px;/*高度*/
+				display: inline-block;/*框框内联*/
+				float: left;/*悬浮*/
+				margin-left: 50px;/*左边距*/
+			}
+			.text a{
+			/*链接样式*/
+				color: #42A852;/*字体颜色*/
+			}
+			.circle{
+			/*圆图框*/
+				margin:0 auto;/*居中*/
+				width: 1200px;/*宽*/
+				height: 200px;/*高*/
+			}
+			.circle1,.circle2,.circle3,.circle4{
+				width: 200px;/*宽*/
+				height: 150px;/*高*/
+				background-size: cover;/*背景图片大小*/
+				border-radius: 50%;/*圆形*/
+				float: left;/*悬浮*/
+			}
+			.circle1{
+			/*圆1*/
+				background-image: url(img/zy1.jpg);/*背景图片*/
+				margin-left: 50px;/*悬浮*/
+			}
+			.circle2{
+			/*圆2*/
+				background-image: url(img/zy2.jpg);/*背景图片*/
+				margin-left: 100px;/*悬浮*/
+			}
+			.circle3{
+			/*圆3*/
+				background-image: url(img/zy3.jpg);/*背景图片*/
+				margin-left: 100px;/*悬浮*/
+			}
+			.circle4{
+			/*圆4*/
+				background-image: url(img/zy4.jpg);/*背景图片*/
+				margin-left: 100px;/*悬浮*/
+			}
+			footer{
+				width: 1200px;/*宽度*/
+				height: 40px;/*高度*/
+				background-color: #C2C2C2;/*背景色*/
+				line-height: 40px;/*行距*/
+				text-align: center;/*文本位置*/
+				margin:0 auto;/*居中*/
+				font-size: 12px;/*字号*/
+				color: #4C4C4C;/*字体颜色*/
+				word-spacing: 25px;/*词间距*/
+			}
+			h1{
+				font-family: "华文行楷";/*字体*/
+				margin-left: 70px;/*左边距*/
+			}
+			h4{
+				color: #42A852;/*字体颜色*/
+				font-size: 15px;/*字体大小*/
+				margin-left: 70px;/*左边距*/
+			}
+			h5{
+				color: #42A852;/*字体颜色*/
+				font-size: 15px;/*字体大小*/
+				margin-left: 70px;/*左边距*/
+			}
+			table{
+				border: thin solid;/*边框*/
+				width: 1200px;/*宽度*/
+				height: 30px;/*高度*/
+				margin:0 auto;/*居中*/
+				background-color: #FFFFFF;/*背景色*/
+				border-collapse: collapse;/*框线重叠*/
+			}
+			th{
+				border: thin solid #236136;/*边框*/
+				width: 200px;/*宽度*/
+			}
+			
+			-->
+		</style>
+	</head>
+
+	<body>
+		<!-- 添加大框 -->
+		<div class="container">
+			<!-- ===页眉开始=== -->
+			<header class="headerBackground">
+				<br><!-- 换行 -->
+				<h1>大熊猫科普馆</h1>
+				<h4 lang="en">Giant panda scient museum</h4>
+				<!-- 添加搜索框 -->
+				<div class="search">	
+            		<input type="text" placeholder="请输入关键字"/><button>搜索</button>
+				</div>
+				
+			</header>
+			<!-- 页眉结束 -->
+			
+			<!-- ===导航开始=== -->
+				<nav class="navigation">
+					<!-- 插入表格 -->
+					<table>
+						<!-- 表格主体 -->
+						<tbody>
+							<!-- 一行表格 -->
+							<tr>
+								<th>
+									<a href="#">主页</a>
+								</th>
+								<th>
+									<a href="css/jj.html">简介</a>
+								</th>
+								<th>
+									<a href="css/fb.html">分布</a>
+								</th>
+								<th>
+									<a href="css/zxdt.html">资讯动态</a>
+								</th>
+								<th>
+									<a href="css/kycg.html">科研成果</a>
+								</th>
+								<th>
+									<a href="css/gywm.html">关于我们</a>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+				</nav>
+			<!-- 导航结束 -->
+			
+			<!-- ===图片轮播开始===-->
+			<div class="photo">
+				<div class="picture">
+					<img src="img/lb1.jpg" alt="轮播图片1"/>
+					<!-- 轮播第一张图片 -->
+					<img src="img/lb2.jpg" alt="轮播图片2"/>
+					<!-- 轮播第二张图片 -->
+					<img src="img/lb3.jpg" alt="轮播图片3"/>
+					<!-- 轮播第三张图片 -->
+					<img src="img/lb4.jpg" alt="轮播图片4"/>
+					<!-- 轮播第四张图片 -->
+				</div>
+			</div>
+			<!-- 图片轮播结束 -->
+			
+			<!-- ===文本目录框开始=== -->
+			<div class="text">
+				<!-- 第一部分 -->
+				<div>
+					<h3><a href="css/jj.html">简介</a></h3>
+					<ul>
+						<li>生活习性</li>
+						<hr>
+						<li>栖息环境</li>
+						<hr>
+						<li>形态特征</li>
+						<hr>
+					</ul>
+				</div>
+				<!-- 第二部分 -->
+				<div>
+					<h3><a href="css/fb.html">分布</a></h3>
+					<ul>
+						<li>全球分布</li>
+						<hr>
+						<li>中国地区分布</li>
+						<hr>
+						<li> </li>
+						<hr>
+					</ul>
+				</div>
+				<!-- 第三部分 -->
+				<div>
+					<h3><a href="css/zxdt.html">资讯动态</a></h3>
+					<ul>
+						<li>新闻热点</li>
+						<hr>
+						<li>视频图片欣赏</li>
+						<hr>
+						<li> </li>
+						<hr>
+					</ul>
+				</div>
+				<!-- 第四部分 -->
+				<div>
+					<h3><a href="css/kycg.html">科研成果</a></h3>
+				  <ul>
+						<li>科研人员</li>
+						<hr>
+						<li>成果介绍</li>
+						<hr>
+						<li> </li>
+						<hr>
+					</ul>
+				</div>
+				<!-- 第五部分 -->
+				<div>
+					<h3><a href="css/gywm.html">关于我们</a></h3>
+				  <ul>
+						<li>团队主旨</li>
+						<hr>
+						<li>联系我们</li>
+						<hr>
+						<li> </li>
+						<hr>
+					</ul>
+				</div>
+			</div>
+			<!-- 文本目录框结束 -->
+			<br>
+			
+			<!-- 添加圆图大框 -->
+			<div class="circle">
+				<div class="circle1"> </div>
+				<!-- 第一个圆图 -->
+				<div class="circle2"> </div>
+				<!-- 第二个圆图 -->
+				<div class="circle3"> </div>
+				<!-- 第三个圆图 -->
+				<div class="circle4"> </div>
+				<!-- 第四个圆图 -->
+			</div>
+			
+			<!-- ===页脚开始=== -->
+			<footer>
+				&copy;大熊猫科普馆； 图片来源：网络； 信息来源：网络； 电话：010-84238801； 地址：四川省南充市顺庆区西华师范大学；
+			</footer>
+			<!-- 页脚结束 -->
+
+		</div>
+		<!-- 大框结束 -->
+	</body>
+</html>

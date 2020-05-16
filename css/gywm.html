@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>大熊猫科普馆</title>
+		<style>
+			<!--
+			.container{
+			/*大框*/
+				width: 1200px;/*宽度*/
+				margin:0 auto;/*居中*/
+			}
+			.headerBackground{
+			/*页眉盒子*/
+				background: url(../img/hbg.jpg);/*背景*/
+				width: 1200px;/*宽度*/
+				height: 100px;/*高度*/
+				margin:0 auto;/*居中*/
+				line-height: 0.5;/*行间距*/
+			}
+			.navigation{
+			/*导航盒子*/
+				margin: 0 auto;/*居中*/
+				width: 1200px;/*宽度*/
+			}
+			.navigation a{
+			/*导航链接*/
+				color: #000000;/*字体颜色*/
+				text-decoration: none;/*链接下划线*/
+			}
+			.navigation th:hover{
+			/*单元格鼠标划过样式*/
+				background: rgba(114,234,77,0.70);/*背景色*/
+			}
+			.search{
+			/*搜索框*/
+				float: right;/*悬浮*/
+				margin-top: -60px;/*上边距*/
+				margin-right: 60px;/*右边距*/
+			}
+			.picture{
+			/*图片框*/
+				background-image: url(../img/大熊猫.jpg);/*背景图*/
+				width: 1200px;/*宽度*/
+				height: 150px;/*高度*/
+				margin:0 auto;/*居中*/
+			}
+			.mainContainer{
+			/*主要框*/
+				width: 1200px;/*宽度*/
+				height: 1250px;/*高度*/
+				margin:0 auto;/*居中*/
+			}
+			.menu{
+			/*菜单栏*/
+				width: 200px;/*宽度*/
+				height:1250px;/*高度*/
+				background-color:#D7F2DE;/*背景色*/
+				float: left;/*飘浮*/
+			}
+			.menu a{
+			/*菜单链接样式*/
+				text-decoration: none;/*下划线*/
+				color: #040404;/*字体颜色*/
+			}
+			.text{
+			/*文本框*/
+				width: 1000px;/*宽度*/
+				height:1250px;/*高度*/
+				background-color:#E9E9E9;/*背景色*/
+				float: right;/*悬浮*/
+				text-align: center;/*文本居中*/
+			}
+			.text p{
+			/*文本段落*/
+				font-family:"宋体";/*字体*/
+				font-size: 18px;/*字号*/
+			}
+			.text img{
+			/*文本图片*/
+				width: 700px;/*宽度*/
+				height: 400px;/*高度*/
+			}
+			h1{
+				font-family: "华文行楷";/*字体*/
+				margin-left: 70px;/*左边距*/
+			}
+			.headerBackground h4{
+				color: #42A852;/*字体颜色*/
+				font-size: 15px;/*字体大小*/
+				margin-left: 70px;/*左边距*/
+			}
+			h2{
+				font-family: "楷体";/*字体*/
+				font-size:30px;/*字号*/
+				color: #256441;/*字体颜色*/
+			}
+			.text h4{
+				text-align: left;/*文本位置*/
+				color:#535353;/*字体颜色*/
+			}
+			table{
+				border: thin solid;/*边框*/
+				width: 1200px;/*宽度*/
+				height: 30px;/*高度*/
+				margin:0 auto;/*居中*/
+				background-color: #FFFFFF;/*背景色*/
+				border-collapse: collapse;/*框线重叠*/
+			}
+			th{
+				border: thin solid #236136;/*边框*/
+				width: 200px;/*宽度*/
+			}
+			footer{
+				width: 1200px;/*宽度*/
+				height: 40px;/*高度*/
+				background-color: #C2C2C2;/*背景色*/
+				line-height: 40px;/*行距*/
+				text-align: center;/*文本位置*/
+				margin:0 auto;/*居中*/
+				font-size: 12px;/*字号*/
+				color: #4C4C4C;/*字体颜色*/
+				word-spacing: 25px;/*词间距*/
+			}
+			-->
+		</style>
+	</head>
+
+	<body>
+		<!-- 添加大框 -->
+		<div>
+			<!-- ===页眉开始=== -->
+			<header class="headerBackground">
+				<br><!-- 换行 -->
+				<h1>大熊猫科普馆</h1>
+				<h4 lang="en">Giant panda scient museum</h4>
+				<!-- 添加搜索框 -->
+				<div class="search">	
+            		<input type="text" placeholder="请输入关键字"/><button>搜索</button>
+				</div>
+			</header>
+			<!-- 页眉结束 -->
+			
+			<!-- ===导航开始=== -->
+			<nav class="navigation">
+				<!-- 插入表格 -->
+				<table>
+						<!-- 一行表格 -->
+						<tr>
+							<th>
+								<a href="../index.html">主页</a>
+							</th>
+							<th>
+								<a href="jj.html">简介</a>
+							</th>
+							<th>
+								<a href="fb.html">分布</a>
+							</th>
+							<th>
+								<a href="zxdt.html">资讯动态</a>
+							</th>
+							<th>
+								<a href="kycg.html">科研成果</a>
+							</th>
+							<th>
+								<a href="#">关于我们</a>
+							</th>
+						</tr>
+				</table>
+				<!-- 表格结束 -->
+			</nav>
+			<!-- 导航结束 -->
+			
+			<!-- 图片框 -->
+			<div class="picture"> </div>
+			
+			<!-- ===主体框开始=== -->
+			<div class="mainContainer">
+				<!-- 菜单框 -->
+				<div class="menu">
+					<br>
+					<br>
+					<h3>关于我们</h3>
+					<hr>
+					<!-- 添加无序列表 -->
+					<ul>
+						<li><a href="#title">团队主旨</a></li>
+						<hr>
+						<!-- =======用验证器验证时<li>标签中不能加<hr>,但是想要这种样式，找不到好的方法，暂时先这样=======-->
+						<li><a href="#contact">联系我们</a></li>
+						<hr>
+					</ul>
+				</div>
+				<!-- 文本框 -->
+				<main class="text">
+					<h4>&nbsp;&nbsp;首页》关于我们》团队主旨</h4>
+					<hr>
+					<!-- 第一部分 -->
+					<h2 id="title">团队主旨</h2>
+					<!-- 添加书签 -->
+					<p>我们致力于终止动物虐待</p>
+
+					<p>We end the neddless suffering of animals.</p>
+
+					<p>我们呼吁将动物保护纳入到全球日程中</p>
+
+					<p>We influence decision makers to put animals on the global agenda</p>
+
+					<p>我们帮助人们认识到动物保护以及动物福利的重要性</p>
+
+					<p>We help the world see how important animals are to all of us</p>
+
+					<p>我们鼓励公众选择“动物友好型”的生活方式，善待动物</p>
+
+					<p>We inspire people to change animals' lives for the better</p>
+
+					<p>我们推动世界保护动物</p>
+
+					<p>We move the world to protect animals</p>
+					<br>
+					<hr>
+					<!-- 第二部分 -->
+					<h2 id="contact">联系我们</h2>
+					<!-- 一行表格 -->
+					<img src="../img/lxwm.jpg" alt="联系我们图片">
+					<p>单位名称：大熊猫科普馆</p>
+					<p>电话：010-84238801</p>
+					<p>传真：010-64238030</p>
+					<p>单位地址：四川省南充市顺庆区西华师范大学</p>
+				</main>
+			</div>
+			<!-- 主框结束 -->
+			<br>
+			<br>
+			<footer>
+				&copy;大熊猫科普馆； 图片来源：网络； 信息来源：网络； 电话：010-84238801； 地址：四川省南充市顺庆区西华师范大学；
+			</footer>
+		</div>
+	</body>
+</html>
